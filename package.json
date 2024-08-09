@@ -1,11 +1,13 @@
 {
-  "name": "my-turborepo",
+  "name": "mf2-rsbuild",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "npx rimraf pnpm-lock.yaml packages/**/node_modules node_modules --glob",
+    "reset": "pnpm clean && pnpm install"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
