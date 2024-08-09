@@ -20,8 +20,9 @@ export default defineConfig({
       plugins: [
         new ModuleFederationPlugin({
           name: 'federation_provider',
-          exposes: {
-            './button': './src/button.tsx',
+          remotes: {
+            app_1:
+              'app_1@http://localhost:3001/mf-manifest.json',
           },
           shared: ['react', 'react-dom'],
         }),

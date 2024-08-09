@@ -7,7 +7,8 @@
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "clean": "npx rimraf pnpm-lock.yaml packages/**/node_modules node_modules --glob",
-    "reset": "pnpm clean && pnpm install"
+    "reset": "pnpm clean && pnpm install",
+    "start": "pnpm dev"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

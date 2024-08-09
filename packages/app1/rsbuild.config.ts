@@ -22,6 +22,7 @@ export default defineConfig({
           name: 'app_1',
           exposes: {
             './Button': './src/components/Button.tsx',
+            './App': './src/App.tsx'
           },
           shared: ['react', 'react-dom'],
         }),
